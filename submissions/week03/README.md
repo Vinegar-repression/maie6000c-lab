@@ -6,7 +6,7 @@
 - Student ID: （请填写）
 - Repository: https://github.com/Vinegar-repression/maie6000c-lab
 - Checkpoint tag: `w03-readiness`
-- Commit SHA: （生成 tag 后填写 `git rev-parse w03-readiness^{commit}` 的结果）
+- Commit SHA: 992fe96de59650f99d5e385db879fa80afd86d32
 
 ## 1. What I changed
 
