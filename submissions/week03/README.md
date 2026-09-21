@@ -56,15 +56,14 @@ The change is intentionally small and bounded:
 
 ## 5. AI Use Statement
 
-I used a generative AI assistant (Coze Agent with Kimi / DeepSeek models) to help scaffold and implement this Week 3 readiness lab. Specifically, the AI helped:
+I used a generative AI assistant (Coze Agent with Kimi / DeepSeek models) to help implement this Week 3 readiness lab. I first decided to add an optional `source` field to the `Case` model as my bounded change, because it is small, end-to-end verifiable, and does not break existing functionality. The AI then helped me:
 
-- Design the bounded change (adding an optional `source` field to `Case`)
-- Write the schema, model, API, Alembic migration, integration tests, and documentation
-- Debug Docker Hub connectivity issues and configure the local environment
-- Draft this README
+- Draft the schema, model, API, Alembic migration, and integration tests
+- Debug environment issues (Docker Hub connectivity and local PostgreSQL port conflict)
+- Write the initial version of this README
 
-I reviewed, adjusted, and verified all generated content before committing. I manually:
-- Confirmed the Alembic migration applies cleanly to PostgreSQL
-- Ran `pytest` and confirmed all tests pass
-- Tested the full case → job → worker → AI triage flow via Swagger/curl
-- Updated the student name and ID in this README directly on GitHub
+I reviewed every file, adjusted the implementation details where needed, and verified everything before committing. Specifically, I:
+- Confirmed the migration applies cleanly to PostgreSQL
+- Ran the test suite and confirmed all tests pass
+- Tested the full `POST /cases` → worker triage → `GET /cases/{id}` flow via Swagger/curl
+- Manually updated my student name and ID in this README on GitHub
