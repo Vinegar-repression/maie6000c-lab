@@ -56,4 +56,15 @@ The change is intentionally small and bounded:
 
 ## 5. AI Use Statement
 
-Generative AI tools were used to scaffold the code changes, tests, migration, and this README. All generated content was reviewed, adjusted, and verified by me. I checked that the migration applies cleanly, that tests pass, and that the API behavior matches the requirements before committing.
+I used a generative AI assistant (Coze Agent with Kimi / DeepSeek models) to help scaffold and implement this Week 3 readiness lab. Specifically, the AI helped:
+
+- Design the bounded change (adding an optional `source` field to `Case`)
+- Write the schema, model, API, Alembic migration, integration tests, and documentation
+- Debug Docker Hub connectivity issues and configure the local environment
+- Draft this README
+
+I reviewed, adjusted, and verified all generated content before committing. I manually:
+- Confirmed the Alembic migration applies cleanly to PostgreSQL
+- Ran `pytest` and confirmed all tests pass
+- Tested the full case → job → worker → AI triage flow via Swagger/curl
+- Updated the student name and ID in this README directly on GitHub
