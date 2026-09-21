@@ -15,12 +15,14 @@ class HealthResponse(BaseModel):
 class CaseCreate(BaseModel):
     title: str = Field(min_length=3, max_length=200)
     description: str = Field(min_length=5, max_length=4000)
+    source: str | None = Field(default=None, max_length=100)
 
 
 class CaseRead(BaseModel):
     id: str
     title: str
     description: str
+    source: str | None = None
     status: CaseStatus
     ai_label: str | None = None
     ai_summary: str | None = None

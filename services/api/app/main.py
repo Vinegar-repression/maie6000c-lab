@@ -46,6 +46,7 @@ def create_case_with_job(db: Session, payload: CaseCreate) -> tuple[Case, Job]:
     case = Case(
         title=payload.title.strip(),
         description=payload.description.strip(),
+        source=payload.source.strip() if payload.source else None,
         status=CaseStatus.QUEUED.value,
     )
     db.add(case)
