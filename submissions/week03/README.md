@@ -6,7 +6,7 @@
 - Student ID: 21312937
 - Repository: https://github.com/Vinegar-repression/maie6000c-lab
 - Checkpoint tag: `w03-readiness`
-- Commit SHA: `16c2b4842821cd511c22fb4562630bb918b9ee41` (tag `w03-readiness`)
+- Commit SHA: `629ab3eb93d8a8c59138c93ece6a1dd89dccc1cf` (tag `w03-readiness`)
 
 ## 1. What I changed
 
