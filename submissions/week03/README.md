@@ -2,8 +2,8 @@
 
 ## Student information
 
-- Name: （请填写）
-- Student ID: （请填写）
+- Name: ZHUANG QI
+- Student ID: 21312937
 - Repository: https://github.com/Vinegar-repression/maie6000c-lab
 - Checkpoint tag: `w03-readiness`
 - Commit SHA: 992fe96de59650f99d5e385db879fa80afd86d32
